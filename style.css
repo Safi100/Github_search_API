@@ -174,7 +174,7 @@ input[type="text"]{
     position: relative;
     background-color: #f0f2fa;
     border-radius: 0 0 10px 10px;
-    padding:15px 10px;
+    padding:30px 10px;
 }
 .repository_card::before{
     content: "";
@@ -273,6 +273,9 @@ overflow: hidden;
     }
     .grid{
         grid-template-columns: repeat(2,1fr);
+    }
+    .number_of_repositries{
+        text-align: center;
     }
 }
 @media screen and (min-width:1024px) {
