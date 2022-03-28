@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Github Search API</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header_container">
+            <div class="header_logo">
+                <span class="title">Github Search</span>
+                <img class="logo" src="image/header_icon.gif" alt="Github_logo">
+            </div>
+            <form class="form" action="">
+                <div class="search_box">
+                    <img class="search_icon" src="image/search_icon.gif" alt="Searh_icon">
+                    <input class="input" type="text" placeholder="Search by username" required>
+                    <button class="search_button">GO</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="user_container"></div>
+    <div class="background-glass"></div>
+    <div class="repository_container">
+        <div class="close_tab"><img src="image/close_icon.svg" alt="close-icon"></div>
+        <h2 class="number_of_repositries"></h2>
+        <div class="grid"></div> <!-- Cards container -->
+    </div>
+    <p class="copyright">Coded with <span class="heart">&hearts;</span> by <a href="https://github.com/Safi100" target="_blank">Safi Nafi</a></p>
+</body>
+</html>
+<script src="app.js"></script>
