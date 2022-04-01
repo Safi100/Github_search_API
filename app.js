@@ -12,7 +12,6 @@ form.addEventListener('submit',(e)=>{
     if(input.value=='' || input.value==' '){
         return;
     }else{
-    console.log(input.value)
     fetch(`https://api.github.com/users/${input.value}`)
     .then( response => response.json() )
     .then( result =>{
@@ -59,7 +58,6 @@ form.addEventListener('submit',(e)=>{
             </div>
         </div>
         `
-        console.log(user)
         user_container.classList.add("user_container_style")
         user_container.innerHTML = DisplayUser
         document.querySelector(".repository_button").addEventListener('click' , openTab) // Go to repostries button 
@@ -70,9 +68,7 @@ form.addEventListener('submit',(e)=>{
                 var colorCounter= 0;
                 grid.innerHTML=""
                 result.forEach(repository => {
-                console.log(repository)
                 const created_at = repository.created_at.split("T").shift().split("-")
-                console.log(created_at[2],months[created_at[1]-1],created_at[0])
                 const displayRepo = `
                     <h2 class="repository_name">${repository.name}</h2>
                     <p class="repository_created_date">Created at ${created_at[2]} ${months[created_at[1]-1]} ${created_at[0]}</p>
